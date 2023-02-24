@@ -1,0 +1,13 @@
+[package]
+name = "esp32s3_nostd"
+version = "0.1.0"
+authors = ["atboxshop <atboxshop@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+hal = { package = "esp32s3-hal", version = "0.7.0" }
+esp-backtrace = { version = "0.5.0", features = ["esp32s3", "panic-handler", "print-uart"] }
+esp-println       = { version = "0.4.0", features = ["esp32s3"] }
+esp-hal-common = {version = "0.7.1", features = ["smartled"]}
+smart-leds = "0.3.0"
