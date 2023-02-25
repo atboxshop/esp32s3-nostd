@@ -62,8 +62,8 @@ fn main() -> ! {
     let empty: [RGB8; NUM_LEDS] = [color_empty; NUM_LEDS];
 
     println!("Hello world!");
-    let bright_val = 20;
-    let delay_val:u32 = 200;
+    let bright_val = 50;
+    let delay_val:u32 = 100;
 
     loop {
         led.write(brightness(gamma(data.iter().cloned()), bright_val))
