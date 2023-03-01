@@ -128,11 +128,11 @@ dependencies = [
 
 [[package]]
 name = "esp-backtrace"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e57b6eded586c6539146fd2511d13ca120e4d5e4d7eb56b69da6ae8e76b748ff"
+checksum = "e628c86c7f56b0511f7ce1d6b1fe9abe070d89556f227e297ed0c8122b9aaef6"
 dependencies = [
- "esp-println 0.3.1",
+ "esp-println",
 ]
 
 [[package]]
@@ -173,12 +173,6 @@ dependencies = [
  "quote",
  "syn",
 ]
-
-[[package]]
-name = "esp-println"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "adcfe5d532cf2029b11996cab6b4af948f41c24b131c76422115634711549aaa"
 
 [[package]]
 name = "esp-println"
@@ -229,7 +223,7 @@ version = "0.1.0"
 dependencies = [
  "esp-backtrace",
  "esp-hal-common",
- "esp-println 0.4.0",
+ "esp-println",
  "esp32s3-hal",
  "smart-leds",
 ]
